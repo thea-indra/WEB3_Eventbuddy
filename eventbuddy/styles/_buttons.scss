@@ -1,0 +1,118 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.btn--primary {
+  background: var(--sapphire);
+  color: white;
+  margin-left: auto;
+
+}
+
+.btn--primary:hover {
+  background: var(--sapphire-hover);
+}
+
+.btn--secondary {
+  background: var(--peach);
+  color: var(--sapphire);
+  opacity: 0.8;
+}
+
+.btn--danger {
+  background: #ef4444;
+  color: white;
+}
+
+.card-delete-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #991b1b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.card-delete-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.card-delete-btn:hover {
+  transform: scale(1.05);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--sapphire-soft);
+}
+
+.tag-chip input {
+  display: none;
+}
+
+.tag-chip .tag-name {
+  cursor: pointer;
+}
+
+.tag-chip input:checked + .tag-name {
+  font-weight: 700;
+}
+
+.tag-chip label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-right: 0.45rem;
+  border-radius: 999px;
+  background: #f6e9ec;
+}
+
+.tag-delete-btn {
+  border: none;
+  background: none;
+  color: #c0392b;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.tag-chip:hover .tag-delete-btn {
+  opacity: 1;
+}
+
+.tag-chip input[type="checkbox"] {
+  display: inline-block;
+  appearance: checkbox;
+}
+
