@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBuddy - Prototyp</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>📅 EventBuddy</h1>
+    <button class="login-icon" aria-label="Login">
+        <img src="assets/images/login.png" height="512" width="512"/>
+    </button>
+</header>
+
+<main>
+    <div id="view-list">
+        <section class="filters">
+            <span class="filters__label">Filtern:</span>
+            <select id="filter-status">
+                <option value="all">Alle Status</option>
+                <option value="planned">Geplant</option>
+                <option value="finished">Abgeschlossen</option>
+            </select>
+            <select id="filter-tag">
+                <option value="all">Alle Tags</option>
+            </select>
+            <select id="filter-participant">
+                <option value="all">Alle Teilnehmer</option>
+            </select>
+            <button id="btn-create-event" class="btn btn--primary">
+                + Neues Event
+            </button>
+        </section>
+
+        <event-list></event-list>
+    </div>
+
+    <div id="view-detail" class="hidden">
+        <event-detail></event-detail>
+    </div>
+</main>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

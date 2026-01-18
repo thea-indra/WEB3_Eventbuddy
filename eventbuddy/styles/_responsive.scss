@@ -1,0 +1,15 @@
+@media (max-width: 640px) {
+  main {
+    padding: var(--space-md);
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: var(--radius-md);
+  }
+
+  .filters select {
+    width: 100%;
+  }
+}
